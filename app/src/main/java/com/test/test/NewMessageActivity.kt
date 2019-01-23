@@ -73,7 +73,7 @@ class NewMessageActivity : AppCompatActivity(), TimePickerDialog.OnTimeSetListen
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
-        if (requestCode == resources.getInteger(R.integer.camera_permission_request_code)) {
+        if (requestCode == resources.getInteger(R.integer.camera_permission_request_code) && grantResults.contains(PackageManager.PERMISSION_GRANTED)) {
             startActivityForResult(Intent(this, QRCodeReaderActivity::class.java),
                 resources.getInteger(R.integer.qr_code_activity_request))
         }
