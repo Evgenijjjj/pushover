@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.test.test.NewMessageActivity">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp"
+    />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <EditText
+                android:textSize="15dp"
+                android:id="@+id/app_token_edittext"
+                android:paddingHorizontal="7dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        <View
+                android:background="@color/black_35_alpha"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        <EditText
+                android:textSize="15dp"
+                android:id="@+id/user_key_edittext"
+                android:paddingHorizontal="7dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        <View
+                android:background="@color/black_35_alpha"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        <EditText
+                android:textSize="15dp"
+                android:id="@+id/device_name_edittext"
+                android:paddingHorizontal="7dp"
+                android:hint="@string/device_name_optional"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        <View
+                android:background="@color/black_35_alpha"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <EditText
+                    android:id="@+id/message_edittext"
+                    android:gravity="top"
+                    android:paddingHorizontal="7dp"
+                    android:hint="@string/message"
+                    android:inputType="text|textMultiLine"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <ImageButton
+                    android:id="@+id/qr_code_button"
+                    android:background="@android:color/transparent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/qr_code"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

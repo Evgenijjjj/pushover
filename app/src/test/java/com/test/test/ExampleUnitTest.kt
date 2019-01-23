@@ -1,4 +1,4 @@
-package com.test.test_pushover
+package com.test.test
 
 import org.junit.Test
 

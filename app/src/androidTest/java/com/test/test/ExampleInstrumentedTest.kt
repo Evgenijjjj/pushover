@@ -1,4 +1,4 @@
-package com.test.test_pushover
+package com.test.test
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

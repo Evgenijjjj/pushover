@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">test_pushover</string>
+    <string name="new_message">New Message</string>
+    <string name="latest_messages">Latest messages</string>
+
+    <string name="apiToken">acebk42c5vg76zf45pfzzofmof8xpd</string>
+    <string name="userKey">u3ba37zs37ftt72cab43qwp2xofidn</string>
+    <string name="device_name_optional">Device Name (optional)</string>
+    <string name="send">Send Now</string>
+    <string name="read_qr_code">Read QR Code</string>
+    <string name="scanResult">SCAN_RESULT</string>
+    <string name="message">Message</string>
+    <string name="notificationId">notification_id</string>
+    <string name="channelId">notification_channel_id</string>
+    <string name="notificationStatus">Notification Status</string>
+
+    <integer name="qr_code_activity_request">111</integer>
+    <integer name="camera_permission_request_code">101</integer>
 </resources>
